@@ -24,9 +24,22 @@ $colors = [
 //    echo $hex['green'];
 
     $person = [
-        'first_name' =>'Brad',
-        'last_name' => "Traversy",
-        'email' => "brad@gmail.com"
+        [
+            'first_name' =>'Brad',
+            'last_name' => "Traversy",
+            'email' => "brad@gmail.com"
+        ],
+        [
+            'first_name' =>'John',
+            'last_name' => "Doe",
+            'email' => "john@gmail.com"
+        ],
+        [
+            'first_name' =>'Jane',
+            'last_name' => "Doe",
+            'email' => "jane@gmail.com"
+        ]
     ];
 
-    echo $person['first_name'];
+ //   echo $person[1]['first_name'];
+    var_dump(json_encode($person));
