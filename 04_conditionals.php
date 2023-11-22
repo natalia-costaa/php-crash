@@ -39,6 +39,22 @@ date_default_timezone_set('America/Sao_Paulo');
 
 // operador ternário
 
-$firstPost = !empty($sports) ? $sports[0] : 'No Posts';
+// $firstPost = !empty($sports) ? $sports[0] : 'No Posts';
 
-echo $firstPost;
+// echo $firstPost;
+
+$favcolor = 'white';
+
+switch($favcolor) {
+  case 'red' :
+    echo 'Your favorite color is red';
+    break; 
+  case 'blue' :
+    echo 'Your favorite color is blue';
+    break;
+  case 'green' :
+    echo 'Your favorite color is green';
+    break;
+    default:
+    echo 'Your favorite color is not red, blue, green';
+};
