@@ -23,6 +23,7 @@ if (condition) {
 }
 */
 
+/*
 date_default_timezone_set('America/Sao_Paulo');
   $t = date("H");
   echo $t;
@@ -34,4 +35,10 @@ date_default_timezone_set('America/Sao_Paulo');
   } else {
     echo 'Good Evening';
   };
+*/
 
+// operador ternário
+
+$firstPost = !empty($sports) ? $sports[0] : 'No Posts';
+
+echo $firstPost;
