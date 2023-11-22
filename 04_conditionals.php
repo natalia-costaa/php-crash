@@ -23,10 +23,26 @@ if (condition) {
 }
 */
 
+/*
     $age = 20;
 
     if($age >= 18) {
-        echo 'You ate old enough to vote';
+        echo 'You are old enough to vote';
     } else {
         echo 'Sorry, you are not old enough to vote';
     };
+  */
+
+  echo date_default_timezone_get();
+
+date_default_timezone_set('America/Sao_Paulo');
+  $t = date("H");
+  echo $t;
+
+  if($t < 12) {
+    echo 'Good Morning!';
+  } elseif($t < 17 ) {
+    echo 'Good Afternoon';
+  } else {
+    echo 'Good Evening';
+  };
