@@ -28,6 +28,40 @@ $arr1 = [1,2,3];
 $arr2 = [7,8,9];
 
 $arr3 = array_merge($arr1, $arr2);
-
+$arr4 = [...$arr1, ...$arr2];
+$space = '<br>';
+echo $space;
 print_r($arr3);
+ 
 
+$a = ['green','red', 'yellow'];
+$b = ['avocado','apple', 'banana'];
+
+$c = array_combine($a, $b);
+$keys = array_keys($c);
+echo $space;
+print_r($keys);
+
+$flipped = array_flip($c);
+echo $space;
+print_r($flipped);
+
+$numbers = range(1,20);
+
+//function numero($n) {
+//   return "Number ${n}";
+//} 
+//$newNumbers = array_map('numero', $numbers);
+$newNumbers = array_map(function($n) {
+    return "Number ${n}";
+}, $numbers);
+
+//print_r($newNumbers);
+
+$lessThan10 = array_filter($numbers, fn($n) => $n <= 10);
+print_r($lessThan10);
+
+$sum = array_reduce($numbers, fn($carry, $n) =>
+$carry + $n);
+
+print_r($sum);
