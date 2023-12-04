@@ -1,7 +1,9 @@
 <?php
 if(isset($_POST['submit'])) {
-    echo $_POST['name'];
-    echo $_POST['age'];
+    $name = filter_input(INPUT_POST, $_POST['name']);
+    $age = filter_input(INPUT_POST, $_POST['age']);
+    echo $name;
+    echo $age;
 }
 ?>
 
