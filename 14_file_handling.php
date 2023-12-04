@@ -8,8 +8,8 @@
     fclose($handle);
     echo $contents;
 } else {
-    $handle = fopen($file, "w");
-    $contents = 'Brad' . 'PHP_EOL' . 'Sara' . 'PHP_EOL' . 'Mike';
+    $handle = fopen($file, 'w');
+    $contents = 'Brad' . PHP_EOL . 'Sara' . PHP_EOL . 'Mike';
     fwrite($handle, $contents);
     fclose($handle);
 }
