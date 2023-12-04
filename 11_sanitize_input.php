@@ -1,7 +1,7 @@
 <?php
 if(isset($_POST['submit'])) {
-    $name = filter_input(INPUT_POST, $_POST['name']);
-    $age = filter_input(INPUT_POST, $_POST['age']);
+    $name = filter_input(INPUT_POST, 'name', FILTER_SANITIZE_SPECIAL_CHARS);
+    $age = filter_input(INPUT_POST, 'age', FILTER_SANITIZE_SPECIAL_CHARS);
     echo $name;
     echo $age;
 }
